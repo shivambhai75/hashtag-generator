@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hashtag Generator</title>
+<style>
+body{
+background:#111;
+color:white;
+font-family:Arial,sans-serif;
+text-align:center;
+padding:20px;
+}
+
+input{
+width:80%;
+padding:12px;
+border-radius:8px;
+border:none;
+margin:10px;
+}
+
+button{
+padding:12px 20px;
+border:none;
+border-radius:8px;
+background:#0095ff;
+color:white;
+font-size:16px;
+}
+
+#result{
+margin-top:20px;
+font-size:18px;
+}
+</style>
+</head>
+<body>
+
+<h1>Hashtag Generator</h1>
+
+<input type="text" id="keyword" placeholder="Enter keyword">
+
+<br>
+
+<button onclick="generateTags()">Generate</button>
+
+<div id="result"></div>
+
+<script>
+function generateTags(){
+let word=document.getElementById("keyword").value;
+
+document.getElementById("result").innerHTML =
+"#"+word+
+"<br>#"+word+"reels"+
+"<br>#"+word+"viral"+
+"<br>#"+word+"trending"+
+"<br>#instagram"+
+"<br>#viralreels"+
+"<br>#explorepage"+
+"<br>#"+word+"2026"+
+"<br>#"+word+"india"+
+"<br>#"+word+"love"+
+"<br>#"+word+"status"+
+"<br>#"+word+"video";
+}
+</script>
+
+</body>
+</html>
